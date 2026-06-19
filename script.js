@@ -334,24 +334,10 @@ document.querySelector('[data-action="full-clean"]').addEventListener("click", (
     }
 });
 
-// Clean RAM
-document.querySelector('[data-action="clean-ram"]').addEventListener("click", () => {
-    if (window.chrome && window.chrome.webview) {
-        window.chrome.webview.postMessage("clean-ram");
-    }
-});
-
 // IP Flush
 document.querySelector('[data-action="ip-flush"]').addEventListener("click", () => {
     if (window.chrome && window.chrome.webview) {
         window.chrome.webview.postMessage("ip-flush");
-    }
-});
-
-// Reset Firewall
-document.querySelector('[data-action="reset-firewall"]').addEventListener("click", () => {
-    if (window.chrome && window.chrome.webview) {
-        window.chrome.webview.postMessage("reset-firewall");
     }
 });
 
@@ -362,6 +348,20 @@ document.querySelector('[data-action="clear-temp"]').addEventListener("click", (
     }
 });
 
+// Delete GameLoop
+document.querySelector('[data-action="delete-gameloop"]').addEventListener("click", () => {
+    if (window.chrome && window.chrome.webview) {
+        window.chrome.webview.postMessage("delete-gameloop");
+    }
+});
+
+// Delete NX Folder
+document.querySelector('[data-action="delete-nx-folder"]').addEventListener("click", () => {
+    if (window.chrome && window.chrome.webview) {
+        window.chrome.webview.postMessage("delete-nx-folder");
+    }
+});
+
 // Kill Emulator
 document.querySelector('[data-action="kill-emulator"]').addEventListener("click", () => {
     if (window.chrome && window.chrome.webview) {
@@ -369,19 +369,6 @@ document.querySelector('[data-action="kill-emulator"]').addEventListener("click"
     }
 });
 
-// fix 98
-document.querySelector('[data-action="fix-98"]').addEventListener("click", () => {
-    if (window.chrome && window.chrome.webview) {
-        window.chrome.webview.postMessage("fix-98");
-    }
-});
-
-// environment-fix
-document.querySelector('[data-action="environment-fix"]').addEventListener("click", () => {
-    if (window.chrome && window.chrome.webview) {
-        window.chrome.webview.postMessage("environment-fix");
-    }
-});
 
 // start-game
 document.querySelector('[data-action="start-game"]').addEventListener("click", () => {
@@ -455,33 +442,6 @@ document.querySelector('[data-mod="ultra-hdr-120"]').addEventListener("click", (
     }
 });
 
-// park-control
-document.querySelector('[data-action="park-control"]').addEventListener("click", () => {
-    if (window.chrome && window.chrome.webview) {
-        window.chrome.webview.postMessage("park-control");
-    }
-});
-
-// timer-resolution
-document.querySelector('[data-action="timer-resolution"]').addEventListener("click", () => {
-    if (window.chrome && window.chrome.webview) {
-        window.chrome.webview.postMessage("timer-resolution");
-    }
-});
-
-// cru
-document.querySelector('[data-action="cru"]').addEventListener("click", () => {
-    if (window.chrome && window.chrome.webview) {
-        window.chrome.webview.postMessage("cru");
-    }
-});
-
-// filterkeys
-document.querySelector('[data-action="filterkeys"]').addEventListener("click", () => {
-    if (window.chrome && window.chrome.webview) {
-        window.chrome.webview.postMessage("filterkeys");
-    }
-});
 
 // nx-script
 document.querySelector('[data-action="nx-script"]').addEventListener("click", () => {
@@ -504,6 +464,27 @@ document.querySelector('[data-action="debloate"]').addEventListener("click", () 
     }
 });
 
+// download-programs
+document.querySelector('[data-action="download-programs"]').addEventListener("click", () => {
+    if (window.chrome && window.chrome.webview) {
+        window.chrome.webview.postMessage("download-programs");
+    }
+});
+
+// download-gameloop-opt
+document.querySelector('[data-action="download-gameloop-opt"]').addEventListener("click", () => {
+    if (window.chrome && window.chrome.webview) {
+        window.chrome.webview.postMessage("download-gameloop-opt");
+    }
+});
+
+// download-nx-json
+document.querySelector('[data-action="download-nx-json"]').addEventListener("click", () => {
+    if (window.chrome && window.chrome.webview) {
+        window.chrome.webview.postMessage("download-nx-json");
+    }
+});
+
 // dp-clat
 document.querySelector('[data-action="dp-clat"]').addEventListener("click", () => {
     if (window.chrome && window.chrome.webview) {
@@ -511,24 +492,10 @@ document.querySelector('[data-action="dp-clat"]').addEventListener("click", () =
     }
 });
 
-// memreduct
-document.querySelector('[data-action="memreduct"]').addEventListener("click", () => {
-    if (window.chrome && window.chrome.webview) {
-        window.chrome.webview.postMessage("memreduct");
-    }
-});
-
 // msi-util
 document.querySelector('[data-action="msi-util"]').addEventListener("click", () => {
     if (window.chrome && window.chrome.webview) {
         window.chrome.webview.postMessage("msi-util");
-    }
-});
-
-// win-server-debloater
-document.querySelector('[data-action="win-server-debloater"]').addEventListener("click", () => {
-    if (window.chrome && window.chrome.webview) {
-        window.chrome.webview.postMessage("win-server-debloater");
     }
 });
 
@@ -567,124 +534,7 @@ document.querySelector('[data-action="defender-control"]').addEventListener("cli
     }
 });
 
-// cmd-remove
-document.querySelector('[data-action="cmd-remove"]').addEventListener("click", () => {
-    if (window.chrome && window.chrome.webview) {
-        window.chrome.webview.postMessage("cmd-remove");
-    }
-});
 
-// cmd-debloat
-document.querySelector('[data-action="cmd-debloat"]').addEventListener("click", () => {
-    if (window.chrome && window.chrome.webview) {
-        window.chrome.webview.postMessage("cmd-debloat");
-    }
-});
-
-// cmd-latency-fixer
-document.querySelector('[data-action="cmd-latency-fixer"]').addEventListener("click", () => {
-    if (window.chrome && window.chrome.webview) {
-        window.chrome.webview.postMessage("cmd-latency-fixer");
-    }
-});
-
-// cmd-ping-fixer
-document.querySelector('[data-action="cmd-ping-fixer"]').addEventListener("click", () => {
-    if (window.chrome && window.chrome.webview) {
-        window.chrome.webview.postMessage("cmd-ping-fixer");
-    }
-});
-
-// cmd-fix-input-delay
-document.querySelector('[data-action="cmd-fix-input-delay"]').addEventListener("click", () => {
-    if (window.chrome && window.chrome.webview) {
-        window.chrome.webview.postMessage("cmd-fix-input-delay");
-    }
-});
-
-// disable-1
-document.querySelector('[data-action="disable-1"]').addEventListener("click", () => {
-    if (window.chrome && window.chrome.webview) {
-        window.chrome.webview.postMessage("disable-1");
-    }
-});
-
-// disable-2
-document.querySelector('[data-action="disable-2"]').addEventListener("click", () => {
-    if (window.chrome && window.chrome.webview) {
-        window.chrome.webview.postMessage("disable-2");
-    }
-});
-
-// disable-3
-document.querySelector('[data-action="disable-3"]').addEventListener("click", () => {
-    if (window.chrome && window.chrome.webview) {
-        window.chrome.webview.postMessage("disable-3");
-    }
-});
-
-// disable-4
-document.querySelector('[data-action="disable-4"]').addEventListener("click", () => {
-    if (window.chrome && window.chrome.webview) {
-        window.chrome.webview.postMessage("disable-4");
-    }
-});
-
-// tweaks-fix-1
-document.querySelector('[data-action="tweaks-fix-1"]').addEventListener("click", () => {
-    if (window.chrome && window.chrome.webview) {
-        window.chrome.webview.postMessage("tweaks-fix-1");
-    }
-});
-
-// tweaks-fix-2
-document.querySelector('[data-action="tweaks-fix-2"]').addEventListener("click", () => {
-    if (window.chrome && window.chrome.webview) {
-        window.chrome.webview.postMessage("tweaks-fix-2");
-    }
-});
-
-// tweaks-fix-3
-document.querySelector('[data-action="tweaks-fix-3"]').addEventListener("click", () => {
-    if (window.chrome && window.chrome.webview) {
-        window.chrome.webview.postMessage("tweaks-fix-3");
-    }
-});
-
-// tweaks-fix-4
-document.querySelector('[data-action="tweaks-fix-4"]').addEventListener("click", () => {
-    if (window.chrome && window.chrome.webview) {
-        window.chrome.webview.postMessage("tweaks-fix-4");
-    }
-});
-
-// disable-all
-document.querySelector('[data-action="disable-all"]').addEventListener("click", () => {
-    if (window.chrome && window.chrome.webview) {
-        window.chrome.webview.postMessage("disable-all");
-    }
-});
-
-// disable-screen
-document.querySelector('[data-action="disable-screen"]').addEventListener("click", () => {
-    if (window.chrome && window.chrome.webview) {
-        window.chrome.webview.postMessage("disable-screen");
-    }
-});
-
-// reg-remove-all
-document.querySelector('[data-action="reg-remove-all"]').addEventListener("click", () => {
-    if (window.chrome && window.chrome.webview) {
-        window.chrome.webview.postMessage("reg-remove-all");
-    }
-});
-
-// screen-fix
-document.querySelector('[data-action="screen-fix"]').addEventListener("click", () => {
-    if (window.chrome && window.chrome.webview) {
-        window.chrome.webview.postMessage("screen-fix");
-    }
-});
 
 
 // Info popup toggle
@@ -703,13 +553,7 @@ document.getElementById('infoOverlay').addEventListener('click', () => {
     document.getElementById('infoOverlay').classList.remove('active');
 });
 
-// Download page buttons
-['dl-win10-enterprise','dl-win10','dl-win11','dl-nvidia-app','dl-amd-adrenalin','dl-aio','dl-directx','dl-winrar','dl-ultraviewer','dl-brave','dl-openrgb','dl-signalrgb','dl-msi-afterburner','dl-xmouse','dl-coretemp','dl-nzxt-cam','dl-iobit-unlocker','dl-logitech-ghub','dl-razer-synapse','dl-hyperx','dl-msi-center'].forEach(function(id) {
-    var el = document.querySelector('[data-action="' + id + '"]');
-    if (el) el.addEventListener("click", function() {
-        if (window.chrome && window.chrome.webview) window.chrome.webview.postMessage(id);
-    });
-});
+
 
 window.updateDashboard = (data) => {
   if (window.dashboard && window.dashboard.performanceData) {
@@ -720,6 +564,25 @@ window.updateDashboard = (data) => {
       }
     });
     window.dashboard.updateUI();
+  }
+};
+
+window.updateAdbStatus = (connected, statusText) => {
+  const badge = document.getElementById('adbStatusBadge');
+  const textEl = document.getElementById('adbStatusText');
+  if (badge && textEl) {
+    textEl.textContent = statusText;
+    
+    // Clear existing status classes
+    badge.classList.remove('connected', 'disconnected', 'connecting');
+    
+    if (statusText === 'Connecting...' || statusText.startsWith('Connecting') || statusText.startsWith('Waiting') || statusText.startsWith('Launching')) {
+      badge.classList.add('connecting');
+    } else if (connected) {
+      badge.classList.add('connected');
+    } else {
+      badge.classList.add('disconnected');
+    }
   }
 };
 
